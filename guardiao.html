@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja guardião | Orion</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="./assets/img/orion-logo-escuro.png" alt="Logo da Orion"  width="1200" height="372">
+        <!-- <button class="btn-menu" id="btn-open-menu">&#9776;</button> -->
+        <nav class="menu">
+            <a class="btn" href="index.html">Início</a>
+            <a class="btn" href="sobre.html">Sobre</a>
+            <a class="btn" href="funcionamento.html">Como funciona</a>
+            <a class="btn ativo" href="guardiao.html">Seja guardião</a>
+            <a class="btn" href="faq.html">FAQ</a>
+            <a class="btn" href="integrantes.html">Integrantes</a>
+            <a class="btn" href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <header class="topo-pagina">
+            <h1>Seja guardião</h1>
+            <p>Guardião é o vizinho que, numa enchente, vai até a casa de quem não consegue sair sozinho. Cada morador tem até dois guardiões.</p>
+        </header>
+        
+        <section class="secao" aria-labelledby="titulo-papel">
+            <h2 id="titulo-papel">O que o guardião faz</h2>
+            <ol class="passos">
+                <li>
+                    <h3>Recebe o aviso</h3>
+                    <p>Quando a água sobe, chega no Telegram uma mensagem de texto e áudio com o nome e o endereço de quem buscar.</p>
+                </li>
+                <li>
+                    <h3>Vai até o morador</h3>
+                    <p>Ajuda a pessoa a sair de casa e ir para um lugar seguro.</p>
+                </li>
+                <li>
+                    <h3>Confirma a retirada</h3>
+                    <p>Toca em “Retirei” e a Defesa Civil fica sabendo que aquela pessoa está segura.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-cadastro">
+            <h2 id="titulo-cadastro">Cadastro de guardião</h2>
+            <form id="form-guardiao" class="formulario" novalidate>
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone com DDD (o mesmo do Telegram)</label>
+                    <input type="tel" id="telefone" name="telefone" autocomplete="tel" required>
+                </div>
+                <div class="campo">
+                    <label for="rua">Rua</label>
+                    <input type="text" id="rua" name="rua" autocomplete="address-line1" required>
+                </div>
+                <div class="campo">
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" name="numero" inputmode="numeric" required>
+                </div>
+                <button type="submit" class="botao">Quero ser guardião</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <img src="assets/img/orion-logo-escuro.png" alt="Orion" width="1200" height="372" class="rodape-logo">
+        <p>O alerta que chega em alguém.</p>
+        <p>Grupo Ctrl+S - Global Solution 2026 FIAP</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Orion</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="./assets/img/orion-logo-escuro.png" alt="Logo da Orion"  width="1200" height="372">
+        <!-- <button class="btn-menu" id="btn-open-menu">&#9776;</button> -->
+        <nav class="menu">
+            <a class="btn" href="index.html">Início</a>
+            <a class="btn" href="sobre.html">Sobre</a>
+            <a class="btn" href="funcionamento.html">Como funciona</a>
+            <a class="btn" href="guardiao.html">Seja guardião</a>
+            <a class="btn" href="faq.html">FAQ</a>
+            <a class="btn" href="integrantes.html">Integrantes</a>
+            <a class="btn ativo" href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <header class="topo-pagina">
+            <h1>Contato</h1>
+            <p>Entre em contato com a equipe do Orion.</p>
+        </header>
+        <section class="secao" aria-labelledby="titulo-contato">
+            <h2 id="titulo-contato">Envie uma mensagem</h2>
+            <form class="formulario" id="form-contato" novalidate>
+                <div class="form">
+                    <label for="name">Nome</label>
+                    <input required type="text" id="name" name="name" placeholder="Digite seu nome">
+                </div>
+                <div class="form">
+                    <label for="email">Email</label>
+                    <input inputmode="email" required type="email" id="email" name="email" placeholder="Digite seu email"> <!-- Required - Declara que é obrigatório -->
+                </div>
+                <div class="form">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto">
+                        <option value="">Escolha um assunto</option>
+                        <option value="duvida">Dúvida sobre o projeto</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="outro">Outro assunto</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui"></textarea>
+                </div>
+                <button class="botao" type="submit" id="submitbtn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <img src="assets/img/orion-logo-escuro.png" alt="Orion" width="1200" height="372" class="rodape-logo">
+        <p>O alerta que chega em alguém.</p>
+        <p>Grupo Ctrl+S - Global Solution 2026 FIAP</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
