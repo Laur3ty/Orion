@@ -23,7 +23,7 @@ Não é necessário instalar nada.
 
 ## Imagens dos integrantes
 
-![Integrante Laura Fagundes Pereira](./assets/img/laura.jpeg)
+<img src="./assets/img/laura.jpeg" alt="Integrante Laura Fagundes" width="140" height="140"> |
 
 ## Estrutura do projeto
 
