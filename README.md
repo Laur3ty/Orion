@@ -13,8 +13,15 @@ O **Orion** é uma solução **CitizenTech** que garante que o alerta de enchent
 ## Integrantes
 
 | Anna Júlia de Albuquerque Martins  | RM: 574866
+| Gabriel Cunha dos Santos           | RM: 575632 
 | Laura Fagundes Pereira             | RM: 574730
 | Paulo Guilherme Sobreira Althaus   | RM: 575324
+
+## Imagens dos integrantes
+
+<img src="./assets/img/annajulia.jpeg" alt="Integrante Anna Júlia Martins" width="140" height="140"> | <img src="./assets/img/gabriel.jpeg" alt="Gabriel Cunha dos Santos" width="140" height="140"> |
+<img src="./assets/img/laura.jpeg" alt="Integrante Laura Fagundes" width="140" height="140"> |
+<img src="./assets/img/paulo.jpeg" alt="Integrante Paulo Guilherme Sobreira Althaus" width="140" height="140">
 
 ## Como abrir
 
@@ -23,11 +30,9 @@ O **Orion** é uma solução **CitizenTech** que garante que o alerta de enchent
 
 Não é necessário instalar nada.
 
-## Imagens dos integrantes
+## Imagens do projeto
 
-<img src="./assets/img/laura.jpeg" alt="Integrante Laura Fagundes" width="140" height="140"> |
-<img src="./assets/img/annajulia.jpeg" alt="Integrante Anna Júlia Martins" width="140" height="140"> |
-<img src="./assets/img/paulo.jpeg" alt="Integrante Paulo Guilherme Sobreira Althaus" width="140" height="140"> |
+<img src="./assets/img/apple-touch-icon-180.png" alt="Logo do Orion" width="140" height="140"> | <img src="./assets/img/capaSimulacao.jpeg" alt="Simulação da Sentinela." width="140"> | <img src="./assets/img/chatOrion.jpeg" alt="Simulação do Chatbot do Orion" height="140">
 
 ## Estrutura do projeto
 
