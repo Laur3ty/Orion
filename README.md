@@ -12,6 +12,7 @@ O **Orion** é uma solução **CitizenTech** que garante que o alerta de enchent
 
 ## Integrantes
 
+| Anna Júlia de Albuquerque Martins  | RM: 574866
 | Laura Fagundes Pereira             | RM: 574730
 
 ## Como abrir
@@ -24,6 +25,7 @@ Não é necessário instalar nada.
 ## Imagens dos integrantes
 
 <img src="./assets/img/laura.jpeg" alt="Integrante Laura Fagundes" width="140" height="140"> |
+<img src="./assets/img/annajulia.jpeg" alt="Integrante Anna Júlia Martins" width="140" height="140"> |
 
 ## Estrutura do projeto
 
