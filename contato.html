@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | Orion</title>
+    <link rel="icon" href="./assets/img/apple-touch-icon-180.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header class="header">
-        <img class="logo" src="./assets/img/orion-logo-escuro.png" alt="Logo da Orion"  width="1200" height="372">
-        <!-- <button class="btn-menu" id="btn-open-menu">&#9776;</button> -->
+        <img class="logo" src="./assets/img/orion-logo-escuro.png" alt="Logo da Orion" width="1200" height="372">
+        <button class="btn-menu" id="btn-open-menu">&#9776;</button>
         <nav class="menu">
             <a class="btn" href="index.html">Início</a>
             <a class="btn" href="sobre.html">Sobre</a>
@@ -26,16 +29,17 @@
             <h1>Contato</h1>
             <p>Entre em contato com a equipe do Orion.</p>
         </header>
-        <section class="secao" aria-labelledby="titulo-contato">
+        <section class="secao">
             <h2 id="titulo-contato">Envie uma mensagem</h2>
             <form class="formulario" id="form-contato" novalidate>
                 <div class="form">
-                    <label for="name">Nome</label>
-                    <input required type="text" id="name" name="name" placeholder="Digite seu nome">
+                    <label for="nome">Nome</label>
+                    <input required type="text" id="nome" name="nome" placeholder="Digite seu nome">
                 </div>
                 <div class="form">
                     <label for="email">Email</label>
-                    <input inputmode="email" required type="email" id="email" name="email" placeholder="Digite seu email"> <!-- Required - Declara que é obrigatório -->
+                    <input inputmode="email" required type="email" id="email" name="email"
+                        placeholder="Digite seu email"> <!-- Required - Declara que é obrigatório -->
                 </div>
                 <div class="form">
                     <label for="assunto">Assunto</label>
@@ -62,5 +66,7 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/formContato.js"></script>
 </body>
+
 </html>

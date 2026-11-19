@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orion | O alerta que chega em alguém</title>
+    <link rel="icon" href="./assets/img/apple-touch-icon-180.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header class="header">
-        <img class="logo" src="./assets/img/orion-logo-escuro.png" alt="Logo da Orion"  width="1200" height="372">
-        <!-- <button class="btn-menu" id="btn-open-menu">&#9776;</button> -->
+        <img class="logo" src="./assets/img/orion-logo-escuro.png" alt="Logo da Orion" width="1200" height="372">
+        <button class="btn-menu" id="btn-open-menu">&#9776;</button>
         <nav class="menu">
             <a class="btn ativo" href="index.html">Início</a>
             <a class="btn" href="sobre.html">Sobre</a>
@@ -24,55 +27,71 @@
     <main>
         <article>
             <section>
-                <video class="radar-video" id="video-radar" autoplay muted loop playsinline preload="auto" poster="assets/video/radar-poster.jpg" aria-hidden="true">
+                <video class="radar-video" id="video-radar" autoplay muted loop playsinline
+                    poster="assets/video/radar-poster.jpg" aria-hidden="true">
                     <source src="assets/video/radar.mp4" type="video/mp4">
                 </video>
             </section>
 
-            <section class="apresentação" aria-labelledby="titulo-inicio">
+            <section class="apresentação">
                 <p class="etiqueta">Funciona mesmo sem internet</p>
                 <h1 id="titulo-inicio">O alerta que chega em alguém.</h1>
                 <p class="apresentacao-botoes">
                     <a href="./funcionamento.html" class="botao">Ver como funciona</a>
                     <a href="./guardiao.html" class="botao botao-secundario">Quero ser guardião</a>
                 </p>
-                <p class="apresentacao-texto">O Orion monitora o nível da água do córrego, identifica riscos de enchentes, alerta os vizinhos guardiões para ajudar pessoas que não conseguem sair de casa sozinhas e informa à Defesa Civil quem já recebeu ajuda e quem ainda precisa de assistência.</p>
+                <p class="apresentacao-texto">O Orion monitora o nível da água do córrego, identifica riscos de
+                    enchentes, alerta os vizinhos guardiões para ajudar pessoas que não conseguem sair de casa sozinhas
+                    e informa à Defesa Civil quem já recebeu ajuda e quem ainda precisa de assistência.</p>
             </section>
 
-            <section class="problema" aria-labelledby="titulo-problema">
+            <section class="problema">
                 <h2 id="titulo-problema">O problema</h2>
-                <p class="problema-texto" id="problema-texto">O Brasil já conta com alertas de enchentes pelo celular, mas receber um aviso nem sempre significa conseguir agir. Idosos acamados, pessoas com deficiência e crianças sozinhas podem precisar de ajuda para sair de casa. O Orion complementa esses alertas, levando a informação até vizinhos guardiões que podem agir e garantir que ninguém fique desamparado diante do perigo.</p>
+                <p class="problema-texto" id="problema-texto">O Brasil já conta com alertas de enchentes pelo celular,
+                    mas receber um aviso nem sempre significa conseguir agir. Idosos acamados, pessoas com deficiência e
+                    crianças sozinhas podem precisar de ajuda para sair de casa. O Orion complementa esses alertas,
+                    levando a informação até vizinhos guardiões que podem agir e garantir que ninguém fique desamparado
+                    diante do perigo.</p>
             </section>
         </article>
 
-        <section class="secao numeros" aria-labelledby="titulo-numeros">
+        <section class="secao numeros">
             <h2 id="titulo-numeros">Por que isso importa</h2>
             <ul class="dados">
-                <li><strong><span class="contador" data-valor="8.9" data-casas="1">8,9</span> milhões</strong> de pessoas vivem em áreas de risco em 1.942 municípios (governo federal / Cemaden).</li>
-                <li><strong><span class="contador" data-valor="51.4" data-casas="1">51,4</span>%</strong> dos mortos nas enchentes do RS em 2024 tinham 60 anos ou mais (GZH, com dados da Defesa Civil).</li>
-                <li><strong><span class="contador" data-valor="197" data-casas="0">197</span> mortes</strong> no estado de SP nos períodos chuvosos de 2022 a 2026 (Agência Pública, com dados da Defesa Civil).</li>
+                <li><strong><span>8,9</span> milhões</strong> de pessoas vivem em áreas de risco em 1.942 municípios
+                    (governo federal / Cemaden).</li>
+                <li><strong><span>51,4</span>%</strong> dos mortos nas enchentes do RS em 2024 tinham 60 anos ou mais
+                    (GZH, com dados da Defesa Civil).</li>
+                <li><strong><span>197</span> mortes</strong> no estado de SP nos períodos chuvosos de 2022 a 2026
+                    (Agência Pública, com dados da Defesa Civil).</li>
             </ul>
         </section>
 
-        <section class="secao"aria-labelledby="titulo-partes">
+        <section class="secao">
             <h2 id="titulo-partes">Como o Orion funciona</h2>
             <ol class="passos">
                 <li>
                     <h3>Sentinela</h3>
-                    <p>Um sensor instalado na margem do córrego monitora o nível da água em tempo real e, ao identificar risco de enchente, aciona automaticamente o semáforo de alerta e a sirene da rua, funcionando mesmo sem conexão com a internet</p>
+                    <p>Um sensor instalado na margem do córrego monitora o nível da água em tempo real e, ao identificar
+                        risco de enchente, aciona automaticamente o semáforo de alerta e a sirene da rua, funcionando
+                        mesmo sem conexão com a internet.</p>
                 </li>
                 <li>
                     <h3>Rede de guardiões</h3>
-                    <p>Quando o nível da água sobe, o Orion envia alertas pelo Telegram para até dois vizinhos guardiões, em formato de texto e áudio, informando quem precisa de ajuda e onde essa pessoa está.</p>
+                    <p>Quando o nível da água sobe, o Orion envia alertas pelo Telegram para até dois vizinhos
+                        guardiões, em formato de texto e áudio, informando quem precisa de ajuda e onde essa pessoa
+                        está.</p>
                 </li>
                 <li>
                     <h3>Confirmação</h3>
-                    <p>O guardião confirma o atendimento tocando no botão “Retirei”, atualizando automaticamente o painel da Defesa Civil, que identifica quem já foi retirado e quais moradores ainda permanecem em casa precisando de ajuda.</p>
+                    <p>O guardião confirma o atendimento tocando no botão “Retirei”, atualizando automaticamente o
+                        painel da Defesa Civil, que identifica quem já foi retirado e quais moradores ainda permanecem
+                        em casa precisando de ajuda.</p>
                 </li>
             </ol>
         </section>
 
-        <section class="secao" aria-labelledby="titulo-areas">
+        <section class="secao">
             <h2 id="titulo-areas">Explore o site</h2>
             <ul class="areas">
                 <li>
@@ -103,4 +122,5 @@
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>

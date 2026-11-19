@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seja guardião | Orion</title>
+    <link rel="icon" href="./assets/img/apple-touch-icon-180.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header class="header">
-        <img class="logo" src="./assets/img/orion-logo-escuro.png" alt="Logo da Orion"  width="1200" height="372">
-        <!-- <button class="btn-menu" id="btn-open-menu">&#9776;</button> -->
+        <img class="logo" src="./assets/img/orion-logo-escuro.png" alt="Logo da Orion" width="1200" height="372">
+        <button class="btn-menu" id="btn-open-menu">&#9776;</button>
         <nav class="menu">
             <a class="btn" href="index.html">Início</a>
             <a class="btn" href="sobre.html">Sobre</a>
@@ -24,15 +27,17 @@
     <main>
         <header class="topo-pagina">
             <h1>Seja guardião</h1>
-            <p>Guardião é o vizinho que, numa enchente, vai até a casa de quem não consegue sair sozinho. Cada morador tem até dois guardiões.</p>
+            <p>Guardião é o vizinho que, numa enchente, vai até a casa de quem não consegue sair sozinho. Cada morador
+                tem até dois guardiões.</p>
         </header>
-        
-        <section class="secao" aria-labelledby="titulo-papel">
+
+        <section class="secao">
             <h2 id="titulo-papel">O que o guardião faz</h2>
             <ol class="passos">
                 <li>
                     <h3>Recebe o aviso</h3>
-                    <p>Quando a água sobe, chega no Telegram uma mensagem de texto e áudio com o nome e o endereço de quem buscar.</p>
+                    <p>Quando a água sobe, chega no Telegram uma mensagem de texto e áudio com o nome e o endereço de
+                        quem buscar.</p>
                 </li>
                 <li>
                     <h3>Vai até o morador</h3>
@@ -45,26 +50,29 @@
             </ol>
         </section>
 
-        <section class="secao" aria-labelledby="titulo-cadastro">
+        <section class="secao">
             <h2 id="titulo-cadastro">Cadastro de guardião</h2>
             <form id="form-guardiao" class="formulario" novalidate>
                 <div class="campo">
                     <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="name" required>
                 </div>
                 <div class="campo">
                     <label for="telefone">Telefone com DDD (o mesmo do Telegram)</label>
-                    <input type="tel" id="telefone" name="telefone" autocomplete="tel" required>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" autocomplete="tel"
+                        required>
                 </div>
                 <div class="campo">
-                    <label for="rua">Rua</label>
-                    <input type="text" id="rua" name="rua" autocomplete="address-line1" required>
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" name="logradouro" placeholder="Digite o logradouro"
+                        autocomplete="address-line1" required>
                 </div>
                 <div class="campo">
                     <label for="numero">Número</label>
-                    <input type="text" id="numero" name="numero" inputmode="numeric" required>
+                    <input type="text" id="numero" name="numero" placeholder="Digite o número" inputmode="numeric"
+                        required>
                 </div>
-                <button type="submit" class="botao">Quero ser guardião</button>
+                <button type="submit" class="botao" id="submitbtn">Quero ser guardião</button>
             </form>
         </section>
     </main>
@@ -76,5 +84,7 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/formGuardiao.js"></script>
 </body>
+
 </html>

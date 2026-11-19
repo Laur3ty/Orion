@@ -1,24 +1,27 @@
 :root {
   /* Paleta do Orion */
-    --cor-fundo: #0B0B0B;
-    --cor-superficie: #161616;
-    --cor-texto: #FFFFFF;
-    --cor-texto-suave: #B5B5B5;
-    --cor-principal: #2BD47D;         
-    --cor-sobre-principal: #0B0B0B; 
-    --cor-linha: rgba(255, 255, 255, 0.14);
+  --cor-fundo: #0B0B0B;
+  --cor-superficie: #161616;
+  --cor-texto: #FFFFFF;
+  --cor-texto-suave: #B5B5B5;
+  --cor-principal: #2BD47D;
+  --cor-sobre-principal: #0B0B0B;
+  --cor-linha: rgba(255, 255, 255, 0.14);
+  --cor-erro: #E53935;
 
-    /* Tipografia */
-    --fonte: "Outfit", "Segoe UI", Roboto, Arial, sans-serif;
+  /* Tipografia */
+  --fonte: "Outfit", "Segoe UI", Roboto, Arial, sans-serif;
 
-    /* Espaços */
-    --recuo: max(1.25rem, calc((100% - 75rem) / 2));
+  /* Espaços */
+  --margem: 1.25rem;
+  --largura-max: 72rem;
+  --recuo: max(var(--margem), calc((100% - var(--largura-max)) / 2));
 }
 
 * {
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -29,15 +32,18 @@ body {
   background-color: var(--cor-fundo);
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-h1, h2, h3 { 
-  line-height: 1.1; 
-  margin-bottom: 1rem; 
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -52,33 +58,33 @@ h2 {
   letter-spacing: -0.01em;
 }
 
-h3 { 
-  font-size: 1.25rem; 
-  font-weight: 500; 
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
-p { 
-  margin-bottom: 1rem; 
-  max-width: 65ch; 
+p {
+  margin-bottom: 1rem;
+  max-width: 65ch;
 }
 
-a { 
-  color: var(--cor-principal); 
-  text-underline-offset: 0.2em; 
+a {
+  color: var(--cor-principal);
+  text-underline-offset: 0.2em;
 }
 
-ul, ol { 
-  list-style: none; 
-}
-
-.secao { 
-  padding: 4rem var(--recuo) 0; 
+ul,
+ol {
+  list-style: none;
 }
 
 main {
   padding-bottom: 4rem;
 }
 
+.secao {
+  padding: 4rem var(--recuo) 0;
+}
 
 .header {
   position: sticky;
@@ -95,13 +101,13 @@ main {
 }
 
 .logo {
-  width: 6.5rem; 
+  width: 6.5rem;
 }
 
-.menu { 
-  display: flex; 
-  flex-wrap: wrap; 
-  gap: 0.25rem 1.25rem; 
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
 }
 
 .menu .btn {
@@ -111,17 +117,18 @@ main {
   border-bottom: 2px solid transparent;
 }
 
-.menu .btn:hover { 
-  color: var(--cor-texto); 
+.menu .btn:hover {
+  color: var(--cor-texto);
 }
 
 
-.menu .ativo { 
-  color: var(--cor-texto); 
-  border-bottom-color: var(--cor-principal); 
+.menu .ativo {
+  color: var(--cor-texto);
+  border-bottom-color: var(--cor-principal);
 }
 
-.btn-menu, .carrossel-botao {
+.btn-menu,
+.carrossel-botao {
   width: 2.75rem;
   height: 2.75rem;
   font-size: 1.3rem;
@@ -132,18 +139,22 @@ main {
   cursor: pointer;
 }
 
+.btn-menu {
+  display: none;
+}
+
 .topo-pagina {
   padding: 3.5rem var(--recuo) 3rem;
   border-bottom: 1px solid var(--cor-linha);
-  background: radial-gradient(circle at 90% 0%, rgba(43, 212, 125, 0.14), transparent 60%);
-} 
+  background: radial-gradient(circle at 90% 0%, rgba(43, 212, 125, 0.15), transparent 75%);
+}
 
 .topo-pagina p {
   font-size: 1.125rem;
   color: var(--cor-texto-suave);
 }
 
-main > article {
+main>article {
   position: relative;
   overflow: hidden;
 }
@@ -154,11 +165,12 @@ main > article {
   z-index: -2;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* cobre a área sem distorcer */
+  object-fit: cover;
+  /* cobre a área sem distorcer */
 }
 
 /* Véu escuro por cima do vídeo */
-main > article::before {
+main>article::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -176,7 +188,7 @@ main > article::before {
 }
 
 .apresentação h1 {
-  max-width: 14ch;
+  max-width: 15ch;
   margin-bottom: 2rem;
   font-size: clamp(2.75rem, 8vw, 5.5rem);
   line-height: 1.02;
@@ -217,8 +229,8 @@ main > article::before {
   color: var(--cor-texto-suave);
 }
 
-.problema { 
-  padding: 3rem var(--recuo) 1rem; 
+.problema {
+  padding: 5rem var(--recuo) 1rem;
 }
 
 .problema h2 {
@@ -228,14 +240,15 @@ main > article::before {
 }
 
 .problema-texto {
-  max-width: 32em;
+  max-width: 34em;
   margin: 0;
-  font-size: clamp(1.35rem, 3vw, 2.1rem);
+  font-size: clamp(1.35rem, 3vw, 2rem);
   font-weight: 300;
   line-height: 1.35;
 }
 
 .botao {
+  align-items: center;
   padding: 0.8rem 1.5rem;
   font: inherit;
   font-weight: 500;
@@ -248,8 +261,8 @@ main > article::before {
   transition: transform 0.2s;
 }
 
-.botao:hover { 
-  transform: translateY(-3px); 
+.botao:hover {
+  transform: translateY(-3px);
 }
 
 .botao-secundario {
@@ -258,21 +271,29 @@ main > article::before {
   border-color: var(--cor-linha);
 }
 
-.dados li, .areas li, .faq-item {
+.dados li,
+.areas li,
+.faq-item {
   padding: 1.5rem;
   background-color: var(--cor-superficie);
   border: 1px solid transparent;
   border-radius: 1rem;
 }
 
-.dados, .areas, .passos {
+.dados,
+.areas,
+.passos {
   display: grid;
   gap: 1rem;
   margin-top: 2rem;
 }
 
-.dados li, .areas p, .passos p, .faq-item p, .integrante p { 
-  color: var(--cor-texto-suave); 
+.dados li,
+.areas p,
+.passos p,
+.faq-item p,
+.integrante p {
+  color: var(--cor-texto-suave);
 }
 
 /* Número grande em destaque */
@@ -285,16 +306,45 @@ main > article::before {
   color: var(--cor-principal);
 }
 
-.faq { 
-  display: grid; 
-  gap: 1rem; 
+.areas li:hover {
+  border-color: var(--cor-principal);
 }
 
-.faq-item { 
-  max-width: 48rem; 
+.areas a {
+  color: var(--cor-texto);
+  text-decoration-color: var(--cor-principal);
 }
-.faq-item h3 { 
-  margin-bottom: 0.5rem; 
+
+.areas p,
+.faq-item p {
+  margin: 0;
+}
+
+.passos li {
+  counter-increment: passo;
+  padding-top: 1rem;
+  border-top: 1px solid var(--cor-linha);
+}
+
+.passos li::before {
+  content: counter(passo, decimal-leading-zero);
+  /* 01, 02, 03 */
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--cor-principal);
+}
+
+.faq {
+  display: grid;
+  gap: 1rem;
+}
+
+.faq-item {
+  max-width: 48rem;
+}
+
+.faq-item h3 {
+  margin-bottom: 0.5rem;
 }
 
 /* Vídeo do simulador */
@@ -317,16 +367,19 @@ main > article::before {
   margin-top: 2rem;
 }
 
-.campo, .form { 
-  display: grid; 
-  gap: 0.4rem; 
+.campo,
+.form {
+  display: grid;
+  gap: 0.4rem;
 }
 
-label { 
-  font-weight: 500; 
+label {
+  font-weight: 500;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 0.85rem 1rem;
   font: inherit;
@@ -336,16 +389,19 @@ input, select, textarea {
   border-radius: 0.75rem;
 }
 
-input:focus, select:focus, textarea:focus { 
+input:focus,
+select:focus,
+textarea:focus {
   outline: none;
-  border-color: var(--cor-principal); 
+  border-color: var(--cor-principal);
 }
 
-textarea { 
-  resize: vertical; 
+textarea {
+  resize: vertical;
 }
-.formulario .botao { 
-  justify-self: start; 
+
+.formulario .botao {
+  justify-self: start;
 }
 
 /* Carrossel */
@@ -378,8 +434,10 @@ textarea {
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
-  backface-visibility: hidden; /* esconde as fotos viradas de costas */
-  filter: brightness(0.4);     /* as fotos dos lados ficam escuras */
+  backface-visibility: hidden;
+  /* esconde as fotos viradas de costas */
+  filter: brightness(0.4);
+  /* as fotos dos lados ficam escuras */
   cursor: pointer;
   transition: filter 0.6s ease;
 }
@@ -389,29 +447,36 @@ textarea {
   filter: none;
 }
 
-.carrossel-foto:nth-child(1) { 
-  transform: rotateY(0deg) translateZ(280px); 
+.carrossel-foto:nth-child(1) {
+  transform: rotateY(0deg) translateZ(280px);
 }
-.carrossel-foto:nth-child(2) { 
-  transform: rotateY(45deg) translateZ(280px); 
+
+.carrossel-foto:nth-child(2) {
+  transform: rotateY(45deg) translateZ(280px);
 }
-.carrossel-foto:nth-child(3) { 
-  transform: rotateY(90deg) translateZ(280px); 
+
+.carrossel-foto:nth-child(3) {
+  transform: rotateY(90deg) translateZ(280px);
 }
-.carrossel-foto:nth-child(4) { 
-  transform: rotateY(135deg) translateZ(280px); 
+
+.carrossel-foto:nth-child(4) {
+  transform: rotateY(135deg) translateZ(280px);
 }
-.carrossel-foto:nth-child(5) { 
-  transform: rotateY(180deg) translateZ(280px); 
+
+.carrossel-foto:nth-child(5) {
+  transform: rotateY(180deg) translateZ(280px);
 }
-.carrossel-foto:nth-child(6) { 
-  transform: rotateY(225deg) translateZ(280px); 
+
+.carrossel-foto:nth-child(6) {
+  transform: rotateY(225deg) translateZ(280px);
 }
-.carrossel-foto:nth-child(7) { 
-  transform: rotateY(270deg) translateZ(280px); 
+
+.carrossel-foto:nth-child(7) {
+  transform: rotateY(270deg) translateZ(280px);
 }
-.carrossel-foto:nth-child(8) { 
-  transform: rotateY(315deg) translateZ(280px); 
+
+.carrossel-foto:nth-child(8) {
+  transform: rotateY(315deg) translateZ(280px);
 }
 
 /* Botões embaixo do carrossel */
@@ -477,9 +542,104 @@ textarea {
   border-top: 1px solid var(--cor-linha);
 }
 
-.rodape-logo { 
-  width: 7rem; margin-bottom: 1rem; 
+.rodape-logo {
+  width: 7rem;
+  margin-bottom: 1rem;
 }
-.rodape p { 
-  margin-bottom: 0.25rem; 
+
+.rodape p {
+  margin-bottom: 0.25rem;
+}
+
+/*Validação do formulário*/
+.erro {
+  border-color: var(--cor-erro);
+}
+
+/* Tablet: a partir de 768 px */
+@media (min-width: 768px) {
+  :root {
+    --margem: 2.5rem;
+  }
+
+  .dados,
+  .passos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .areas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Telas menores (< 992px) */
+@media (max-width: 991px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 40vh;
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 35px;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .menu.ativo-menu {
+    right: 0;
+  }
+
+  .menu .btn {
+    width: 90%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .btn-menu {
+    display: block;
+    z-index: 1001;
+  }
+}
+
+/* Telas menores (< 400px) */
+@media (max-width: 400px) {
+  .menu {
+    width: 260px;
+    height: 50vh;
+  }
+
+  .menu .btn {
+    font-size: 16px;
+  }
+
+  @media (max-width: 380px) {
+    .menu {
+      height: 55vh;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .menu {
+      height: 45vh;
+    }
+  }
+}
+
+/* Desktop: a partir de 1024 px */
+@media (min-width: 1024px) {
+
+  .apresentação {
+    min-height: calc(100vh - 4.5rem); /* */
+  }
+
+  .areas,
+  .integrantes {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
